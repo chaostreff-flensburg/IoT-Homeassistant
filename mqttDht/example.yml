@@ -1,0 +1,13 @@
+#ESP Bad
+  - platform: mqtt
+    state_topic: "bathroom/temp"
+    name: "Temperatur Badezimmer"
+    qos: 0
+    unit_of_measurement: "°C"
+    #value_template: '{{ payload }}'
+  - platform: mqtt
+    state_topic: "bathroom/humid"
+    name: "Luftfeuchtigkeit Badezimmer"
+    qos: 0
+    unit_of_measurement: "%"
+    #value_template: '{{ payload }}'
